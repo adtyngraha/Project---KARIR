@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2025 at 04:12 AM
+-- Generation Time: Jun 30, 2025 at 01:18 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -53,7 +53,9 @@ INSERT INTO `detail_penjualan` (`id_detail`, `id_penjualan`, `id_produk`, `jumla
 (11, 14, 111, 20, 20000.00),
 (12, 14, 112, 4, 6000.00),
 (13, 15, 112, 3, 4500.00),
-(14, 15, 114, 3, 15000.00);
+(14, 15, 114, 3, 15000.00),
+(15, 16, 111, 100, 100000.00),
+(16, 16, 117, 70, 560000.00);
 
 -- --------------------------------------------------------
 
@@ -82,18 +84,6 @@ INSERT INTO `pegawai` (`id_pegawai`, `nama_pegawai`, `username`, `password`, `ja
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pelanggan`
---
-
-CREATE TABLE `pelanggan` (
-  `id_pelanggan` int(11) NOT NULL,
-  `nama_pelanggan` varchar(100) NOT NULL,
-  `nomer_pelanggan` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `penjualan`
 --
 
@@ -117,7 +107,8 @@ INSERT INTO `penjualan` (`id_penjual`, `tanggal_waktu`, `total_harga`, `id_pegaw
 (12, '2025-06-29 17:10:56', 89000.00, 1),
 (13, '2025-06-29 17:11:21', 80000.00, 1),
 (14, '2025-06-29 17:16:30', 26000.00, 1),
-(15, '2025-06-29 23:30:05', 19500.00, 123);
+(15, '2025-06-29 23:30:05', 19500.00, 123),
+(16, '2025-06-30 09:28:47', 660000.00, 123);
 
 -- --------------------------------------------------------
 
@@ -143,7 +134,7 @@ INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_jual`, `stok`) VALUES
 (114, 'Sempol Mozza Bomb', 5000.00, 72),
 (115, 'Sempol Crispy Crunch', 3500.00, 80),
 (116, 'Sempol Balado Vibes', 1500.00, 80),
-(117, 'Sempol BBQ Party', 8000.00, 70);
+(117, 'Sempol BBQ Party', 8000.00, 80);
 
 --
 -- Indexes for dumped tables
@@ -162,12 +153,6 @@ ALTER TABLE `detail_penjualan`
 --
 ALTER TABLE `pegawai`
   ADD PRIMARY KEY (`id_pegawai`);
-
---
--- Indexes for table `pelanggan`
---
-ALTER TABLE `pelanggan`
-  ADD PRIMARY KEY (`id_pelanggan`);
 
 --
 -- Indexes for table `penjualan`
@@ -190,7 +175,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `detail_penjualan`
 --
 ALTER TABLE `detail_penjualan`
-  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `pegawai`
@@ -199,16 +184,10 @@ ALTER TABLE `pegawai`
   MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=757;
 
 --
--- AUTO_INCREMENT for table `pelanggan`
---
-ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `produk`

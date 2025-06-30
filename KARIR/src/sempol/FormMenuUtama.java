@@ -83,10 +83,8 @@ public void setVisible(boolean b) {
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
 
@@ -158,14 +156,6 @@ public void setVisible(boolean b) {
         });
         jMenu1.add(jMenuItem6);
 
-        jMenuItem7.setText("Data Pelanggan");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem7);
-
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Kasir");
@@ -182,14 +172,6 @@ public void setVisible(boolean b) {
             }
         });
         jMenu2.add(jMenuItem2);
-
-        jMenuItem8.setText("Data Pelanggan");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuItem8);
 
         jMenuBar1.add(jMenu2);
 
@@ -276,22 +258,6 @@ public void setVisible(boolean b) {
         this.dispose();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        // TODO add your handling code here:
-        FormPelanggan formPelanggan = new FormPelanggan();
-        formPelanggan.setLocationRelativeTo(null); 
-        formPelanggan.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
-
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-        // TODO add your handling code here:
-        FormPelanggan formPelanggan = new FormPelanggan();
-        formPelanggan.setLocationRelativeTo(null); 
-        formPelanggan.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
-
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         new FormLogin().setVisible(true);
@@ -345,8 +311,6 @@ public void setVisible(boolean b) {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblLogo;
     // End of variables declaration//GEN-END:variables
